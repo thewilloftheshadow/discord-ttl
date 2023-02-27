@@ -106,6 +106,9 @@ async function retrieveMessages(): Promise<void> {
     if (!channel.isText() || channel.type === 'DM') {
       continue;
     }
+    if (channel.id !== "1079877333827211376") { // scream into the void channel in the graveyard
+      continue;
+    }
     if (!canManageMessages(channel)) {
       continue;
     }
